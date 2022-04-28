@@ -53,16 +53,19 @@ class QuestionsOnString {
 	void reverseOfAString(String s) {
 		// Write Logic Here!
 		String str;
+		String rev = null;
+		
 		Scanner scan= new Scanner(System.in);
 		System.out.print("Enter a string : ");
 		str=scan.nextLine();	
-		char[] ch=str.toCharArray(); 
+		int len=str.length();
 		System.out.println("Reverse of a String is :"); 
-		int j=ch.length;
-		for(int i=j;i>0;i--)
+		
+		for(int i=len-1;i>=0;i--)
 		{
-		System.out.print(ch[i-1]); 
+			rev=rev+str.charAt(i);
 		}
+		System.out.print("reversed string is:"+rev); 
 
 	}
 	

@@ -1,5 +1,5 @@
 package Unit_01;
-import java.util.Scanner
+import java.util.Scanner;
 
 /* When user takes input from the console
  * nextLine()		read user input [to read string]
